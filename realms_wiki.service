@@ -1,0 +1,25 @@
+[Unit]
+Description=Realms Wiki
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+PIDFile=/var/run/realms-wiki.pid
+User=ub2
+Group=ub2
+WorkingDirectory=/home/ub2/SERVER2/realms_wiki
+ExecStart=/home/ub2/SERVER2/realms_wiki/ENV/bin/realms \
+    --name realms-wiki \
+    --access-logfile - \
+    --error-logfile - \
+    --worker-class gevent \
+    --workers 2 \
+    --bind 0.0.0.0:28902 \
+    --user ub2 \
+    --group ub2 \
+    --chdir /home/ub2/SERVER2/realms_wiki/ENV \
+    'realms:create_app()' > /dev/null 2>&1 &
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
+
+[Install]
+WantedBy=multi-user.target
