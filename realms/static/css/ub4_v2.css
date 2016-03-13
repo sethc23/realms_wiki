@@ -1,0 +1,167 @@
+.hljs {
+  display: block; 
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #D8D9D1;
+  background: #1D1F20;
+  opacity: 0.82;
+  -webkit-text-size-adjust: none
+}
+
+.hljs-winutils,
+.hljs-subst,
+.css .rule .hljs-keyword {
+    color: #D8D9D1
+}
+
+
+.hljs-tag .hljs-value {
+    color: #FF8E19;
+}
+
+
+.hljs-comment,
+.hljs-template_comment,
+.diff .hljs-header,
+.hljs-javadoc {
+  color: #998;
+  font-style: italic
+}
+
+.ruby .hljs-constant,
+.hljs-keyword,
+.javascript .hljs-title,
+.nginx .hljs-title,
+.hljs-request,
+.hljs-status {
+  color: #53D2FF;
+  font-weight: bold
+}
+
+.hljs-number,
+.hljs-hexcolor {
+  color: #DC44FF;
+}
+
+.hljs-string,
+.hljs-phpdoc,
+.tex .hljs-formula {
+  color: #58D739
+}
+
+.hljs-title,
+.hljs-id,
+.coffeescript .hljs-params,
+.scss .hljs-preprocessor {
+  color: #a6e22e;
+  font-weight: bold
+}
+
+.javascript .hljs-title,
+.lisp .hljs-title,
+.clojure .hljs-title,
+.hljs-subst {
+  font-weight: normal
+}
+
+.hljs-class .hljs-title,
+.haskell .hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: #53D2FF;
+  font-weight: bold
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: #53D2FF;
+  font-weight: normal
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body {
+  color: #f8f8f2
+}
+
+.hljs-regexp {
+  color: #DC44FF
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: #53D2FF
+}
+
+.hljs-built_in,
+.lisp .hljs-title,
+.clojure .hljs-built_in {
+  color: #D8D9D1
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: #D8D9D1;
+  font-weight: bold
+}
+
+.hljs-deletion {
+  background: #75715e
+}
+
+.hljs-addition {
+  background: #1DCF30
+}
+
+.diff .hljs-change {
+  background: #53D2FF
+}
+
+.hljs-chunk {
+  color: #aaa
+}
+
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #D95D18;
+    background-color: #E4DFDF;
+    border-radius: 4px;
+}
+
+mark {
+    color: #000;
+    background: #D0FFC4;
+}
+
+
+.col-branch {
+    width: 10%;
+    font-weight: normal;
+}
+.col-message {
+    width: 60%;
+    font-weight: normal;
+}
+.col-date {
+    /*width: 110px*/
+    width: 20%;
+    font-weight: normal;
+}
+.col-sha {
+    width: 10%;
+    font-weight: normal;
+}
+
+.commit-message {
+    font-weight: normal;
+}
