@@ -243,7 +243,8 @@ assets.register('main.css',
                 'vendor/components-font-awesome/css/font-awesome.css',
                 'vendor/highlightjs/styles/github.css',
                 'vendor/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css',
-                'css/style.css')
+                'css/style.css',
+                'css/ub4_v2.css')
 
 
 def with_appcontext(f):
