@@ -1,0 +1,10 @@
+#!/home/ub2/SERVER2/realms_wiki/ENV/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'flask-ldap-login==0.3.0','console_scripts','flask-ldap-login-check'
+__requires__ = 'flask-ldap-login==0.3.0'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('flask-ldap-login==0.3.0', 'console_scripts', 'flask-ldap-login-check')()
+    )

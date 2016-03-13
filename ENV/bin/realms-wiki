@@ -1,0 +1,10 @@
+#!/home/ub2/SERVER2/realms_wiki/ENV/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'realms-wiki==0.6.1','console_scripts','realms-wiki'
+__requires__ = 'realms-wiki==0.6.1'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('realms-wiki==0.6.1', 'console_scripts', 'realms-wiki')()
+    )
