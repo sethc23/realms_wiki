@@ -3,20 +3,19 @@ Description=Realms Wiki
 After=syslog.target network.target remote-fs.target nss-lookup.target
 
 [Service]
-PIDFile=/var/run/realms-wiki.pid
-User=ub2
-Group=ub2
+PIDFile=/var/run/realms_wiki.pid
 WorkingDirectory=/home/ub2/SERVER2/realms_wiki
 ExecStart=/home/ub2/SERVER2/realms_wiki/ENV/bin/realms \
-    --name realms-wiki \
+    /home/ub2/SERVER2/realms_wiki/ENV/bin/gunicorn \
+    --worker-class gevent \
+    --bind 0.0.0.0:28902 \
+    --name realms_wiki \
     --access-logfile - \
     --error-logfile - \
-    --worker-class gevent \
-    --workers 2 \
-    --bind 0.0.0.0:28902 \
     --user ub2 \
     --group ub2 \
-    --chdir /home/ub2/SERVER2/realms_wiki/ENV \
+    --workers 2 \
+    --pid /var/run/realms_wiki.pid \
     'realms:create_app()' > /dev/null 2>&1 &
 ExecReload=/bin/kill -s HUP $MAINPID
 ExecStop=/bin/kill -s QUIT $MAINPID
