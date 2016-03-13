@@ -1,6 +1,6 @@
 {
     "ALLOW_ANON": true,
-    "BASE_URL": "http://blog.sanspaper.com",
+    "BASE_URL": "http://wiki.sanspaper.com",
     "CACHE_TYPE": "simple",
     "DB_URI": "postgresql://postgres:postgres@localhost:8800/wiki",
     "PORT": 28902,
