@@ -19,6 +19,8 @@ ExecStart=/home/ub2/SERVER2/realms_wiki/ENV/bin/realms \
     'realms:create_app()' > /dev/null 2>&1 &
 ExecReload=/bin/kill -s HUP $MAINPID
 ExecStop=/bin/kill -s QUIT $MAINPID
+Restart=always
+RestartSec=5
 
 [Install]
 WantedBy=multi-user.target
