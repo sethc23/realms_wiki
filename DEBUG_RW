@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+source /home/ub2/SERVER2/realms_wiki/ENV/bin/activate
+
+/home/ub2/SERVER2/realms_wiki/ENV/bin/gunicorn --worker-class gevent --bind 0.0.0.0:28902 --name realms_wiki --access-logfile - --error-logfile - --user ub2 --group ub2 --workers 2 'realms:create_app()'
